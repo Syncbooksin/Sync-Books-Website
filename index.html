@@ -18,23 +18,32 @@
     font-size: 1.05rem;
     color: rgba(255,255,255,0.85);
 }
+p{
+    line-height:1.9;
+    text-align:justify;
+}
 
+section p{
+    max-width:900px;
+    margin:auto;
+}
 /* Mouse Glow */
-.cursor-glow {
+..cursor-light {
     position: fixed;
-    width: 450px;
-    height: 450px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+
     background: radial-gradient(
         circle,
-        rgba(0,255,255,0.25) 0%,
-        rgba(128,0,255,0.15) 40%,
+        rgba(0,0,0,0.08) 0%,
+        rgba(0,0,0,0.03) 40%,
         transparent 70%
     );
-    pointer-events: none;
+
     transform: translate(-50%, -50%);
-    z-index: 0;
-    filter: blur(50px);
     transition: transform 0.05s linear;
 }
 
